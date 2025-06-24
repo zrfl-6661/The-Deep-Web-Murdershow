@@ -4,6 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Deep Web: Murdershow (2024) | Horror, Thriller</title>
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="The Deep Web: Murdershow (2024)" />
+  <meta property="og:description" content="Jurnalis menyelam ke situs gelap dan terjebak dalam livestream pembunuhan mengerikan." />
+  <meta property="og:image" content="https://i.imgur.com/q91fU1h.jpeg" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="https://yourdomain.com/the-deep-web-murdershow" />
+
+  <!-- Twitter Card Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Deep Web: Murdershow (2024)" />
+  <meta name="twitter:description" content="Jurnalis menyelam ke situs gelap dan terjebak dalam livestream pembunuhan mengerikan." />
+  <meta name="twitter:image" content="https://i.imgur.com/q91fU1h.jpeg" />
+
   <style>
     body {
       margin: 0;
@@ -14,58 +28,21 @@
       justify-content: center;
       height: 100vh;
     }
-    .video-container {
-      position: relative;
+    iframe {
+      border: none;
       width: 800px;
       max-width: 100%;
-      height: 450px;
-      border-radius: 8px;
-      overflow: hidden;
-      cursor: pointer;
-    }
-    .video-thumbnail {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .play-button {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 64px;
-      color: white;
-      opacity: 0.8;
-      transition: opacity 0.3s;
-    }
-    .video-container:hover .play-button {
-      opacity: 1;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: none;
+      height: 600px;
+      max-height: 100%;
       border-radius: 8px;
     }
   </style>
 </head>
 <body>
-  <div class="video-container" onclick="playVideo()">
-    <img class="video-thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszRiLYje-N6LLbBSR4B36JWBwPF90yOVO0XeqlboXHGqbXRhNNg8QqQ&s=10" alt="Thumbnail">
-    <div class="play-button">▶</div>
-    <iframe id="videoPlayer" src="https://pixeldrain.com/u/17gkp8e4?embed" allowfullscreen></iframe>
-  </div>
-
-  <script>
-    function playVideo() {
-      const container = document.querySelector('.video-container');
-      container.querySelector('img').style.display = 'none';
-      container.querySelector('.play-button').style.display = 'none';
-      container.querySelector('iframe').style.display = 'block';
-    }
-  </script>
+  <iframe 
+    src="https://pixeldrain.com/u/17gkp8e4?embed" 
+    allowfullscreen>
+  </iframe>
 
   <script type="application/ld+json">
   {
@@ -77,7 +54,7 @@
     "duration": "PT1H29M",
     "genre": ["Horror", "Thriller"],
     "contentUrl": "https://pixeldrain.com/u/17gkp8e4",
-    "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszRiLYje-N6LLbBSR4B36JWBwPF90yOVO0XeqlboXHGqbXRhNNg8QqQ&s=10"
+    "thumbnailUrl": "https://i.imgur.com/q91fU1h.jpeg"
   }
   </script>
 </body>
